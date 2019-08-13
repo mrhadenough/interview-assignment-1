@@ -6,6 +6,8 @@ Create a simple todo application where users can:
 - Show a list of tasks and task attributes (see "Task attributes" section for more details)
 - Create, edit, remove tasks, and assign due date/time to task
 - Create labels and assign labels to tasks
+- (Optional) Create a alternative calendar style view of tasks
+- (Optional) Unit tests
 
 **Other task parameters:**
 
