@@ -1,13 +1,13 @@
 # Requirements
 Create a simple todo application where users can:
 
-Functionality:
+**Functionality:**
 
 - Show a list of tasks and task attributes (see "Task attributes" section for more details)
 - Create, edit, remove tasks, and assign due date/time to task
 - Create labels and assign labels to tasks
 
-Other task parameters:
+**Other task parameters:**
 
 - This assignment should be written in Django, and leverage only standard django library
 - Include some basic insturctions to install dependencies and run application
