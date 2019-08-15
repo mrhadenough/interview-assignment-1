@@ -3,12 +3,12 @@ Create a simple todo application where users can:
 
 **Functionality:**
 
-- Show a list of tasks and task attributes (see "Task attributes" section for more details)
-- Create, edit, remove tasks, and assign due date/time to task
-- Create labels and assign labels to tasks
-- (Optional) Create a alternative calendar style view of tasks
-- (Optional) Implement ability to filter task list by task labels
-- (Optional) Unit tests
+- [x] Show a list of tasks and task attributes (see "Task attributes" section for more details)
+- [x] Create, edit, remove tasks, and assign due date/time to task
+- [x] Create labels and assign labels to tasks
+- [x] (Optional) Create a alternative calendar style view of tasks
+- [ ] (Optional) Implement ability to filter task list by task labels
+- [ ] (Optional) Unit tests
 
 **Other task parameters:**
 
@@ -34,3 +34,20 @@ Create a simple todo application where users can:
 **Calendar event attributes:**
 
 - Date/time
+
+### How to run
+
+run PostgreSQL, connect to it and create database (default is "todo")
+
+Usualy I'm doing this like in the following command
+```
+docker run --name postgres --restart=always -e POSTGRES_PASSWORD=postgres -p 127.0.0.1:5432:5432 -v $HOME/Documents/docker_volumes/postgres:/var/lib/postgresql/data -d postgres:10.4-alpine
+```
+
+```
+brew install pipenv
+pipenv shell --python 3.7.3
+pipenv install
+./manage.py migrate
+./manage.py createsuperuser # if you want to use admin and see the models
+```
